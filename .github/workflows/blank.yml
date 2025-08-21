@@ -1,0 +1,25 @@
+name: My-Github-actions-Basics
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print nice message
+        run: echo "Hello World"
+
+  my_staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print nice message
+        run: echo "Hello World from stage"
+
+  my_production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print nice message
+        run: echo "Hello World from prood"
